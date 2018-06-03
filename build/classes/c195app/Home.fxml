@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="c195app.HomeController">
+   <children>
+      <Label layoutY="58.0" prefHeight="60.0" prefWidth="1032.0" text="Welcome + user name">
+         <graphic>
+            <HBox prefHeight="100.0" prefWidth="200.0" />
+         </graphic></Label>
+      <HBox layoutX="97.0" layoutY="373.0" prefHeight="100.0" prefWidth="945.0">
+         <children>
+            <MenuButton mnemonicParsing="false" styleClass="homeButton" text="Mannage Appointments">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#addAppointment" text="Add Appointment" />
+                  <MenuItem mnemonicParsing="false" onAction="#viewCallender" text="View Appointment Calender" />
+               </items>
+               <HBox.margin>
+                  <Insets right="30.0" />
+               </HBox.margin>
+            </MenuButton>
+            <MenuButton alignment="CENTER" mnemonicParsing="false" styleClass="homeButton" text="Mannage Customers">
+              <items>
+                <MenuItem mnemonicParsing="false" onAction="#addCustomers" text="Add Customer" />
+                <MenuItem mnemonicParsing="false" onAction="#viewCustomers" text="View Customers" />
+              </items>
+               <HBox.margin>
+                  <Insets right="30.0" />
+               </HBox.margin>
+            </MenuButton>
+            <MenuButton mnemonicParsing="false" styleClass="homeButton" text="View Reports">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#viewUserSchedule" text="User Schedules" />
+                  <MenuItem mnemonicParsing="false" onAction="#viewApptByOffice" text="View Appointmens by Office" />
+                  <MenuItem mnemonicParsing="false" onAction="#viewTypes" text="View Appointment Types" />
+               </items>
+               <HBox.margin>
+                  <Insets right="30.0" />
+               </HBox.margin>
+            </MenuButton>
+         </children>
+         <padding>
+            <Insets right="30.0" />
+         </padding>
+      </HBox>
+   </children>
+</AnchorPane>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="c195app.UserScheduleController">
+      
+   <children>
+      <TableView fx:id="tv" layoutX="69.0" layoutY="100.0" prefHeight="400.0" prefWidth="882.0">
+        <columns>
+          <TableColumn fx:id="startCol" prefWidth="203.0" text="Appt Start" />
+          <TableColumn fx:id="endCol" prefWidth="197.0" text="Appt End" />
+          <TableColumn fx:id="customerCol" prefWidth="140.0" text="Customer" />
+          <TableColumn fx:id="locationCol" prefWidth="193.0" text="Location" />
+            <TableColumn fx:id="userCol" prefWidth="148.0" text="User" />
+        </columns>
+      </TableView>
+      <Label layoutX="225.0" layoutY="36.0" styleClass="heading" stylesheets="@c195App.css" text="Appointment Calender" />
+      <Button layoutX="1064.0" layoutY="528.0" mnemonicParsing="false" onAction="#goBack" text="Close" />
+      <TextField fx:id="userSearch" layoutX="778.0" layoutY="40.0" promptText="Seach Users" />
+   </children>
+
+</AnchorPane>

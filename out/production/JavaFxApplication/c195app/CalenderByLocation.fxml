@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="c195app.CalenderByLocationController">
+   
+   <children>
+      <TableView fx:id="tv" layoutX="59.0" layoutY="100.0" prefHeight="400.0" prefWidth="991.0">
+        <columns>
+          <TableColumn fx:id="startCol" prefWidth="180.0" text="Start" />
+          <TableColumn fx:id="endCol" prefWidth="180.0" text="End" />
+          <TableColumn fx:id="customer" prefWidth="127.0" text="Customer" />
+          <TableColumn fx:id="user" prefWidth="185.0" text="User" />
+          <TableColumn fx:id="type" prefWidth="168.0" text="Type" />
+            <TableColumn fx:id="locationCol" prefWidth="150.0" text="Location" />
+        </columns>
+      </TableView>
+      <Label layoutX="150.0" layoutY="44.0" styleClass="heading" stylesheets="@c195App.css" text="Appointment Calende by Locationr" />
+      <Button layoutX="997.0" layoutY="537.0" mnemonicParsing="false" onAction="#goBack" text="Close" />
+      <TextField fx:id="selectUser" layoutX="900.0" layoutY="39.0" prefWidth="150.0" promptText="Search a Location" />
+   </children>
+
+</AnchorPane>

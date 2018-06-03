@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="1200.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.111" fx:controller="c195app.AppointmentByTypeController">
+   <children>
+      <TableView fx:id="tv" layoutX="94.0" layoutY="102.0" prefHeight="400.0" prefWidth="548.0">
+        <columns>
+          <TableColumn fx:id="apptType" prefWidth="306.0" text="Appointment Type" />
+          <TableColumn fx:id="numberOfAppt" prefWidth="240.0" text="Number of Appointments" />
+        </columns>
+      </TableView>
+      <Label layoutX="94.0" layoutY="44.0" styleClass="heading" stylesheets="@c195App.css" text="Appointment Calender" />
+      <Button layoutX="843.0" layoutY="475.0" mnemonicParsing="false" onAction="#goBack" text="Close" />
+      
+
+   </children>
+
+</AnchorPane>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" fx:id="anchor" prefHeight="600.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="c195app.UpdateAppointmentController">
+    <children>
+        <Label fx:id="setLocation" layoutX="86.0" layoutY="138.0" text="Select Date" />
+        <Label layoutX="533.0" layoutY="130.0" text="Location" />
+        <Label fx:id="appointment" layoutX="94.0" layoutY="34.0" styleClass="headding" text="Set An Appointment" />
+        <Label layoutX="527.0" layoutY="270.0" text="Meeting Topic " />
+        <Label layoutX="87.0" layoutY="203.0" text="Customer" />
+        <Label fx:id="contact" layoutX="533.0" layoutY="203.0" text="Contact" />
+        <Label layoutX="527.0" layoutY="324.0" text="Meeting Discription" />
+        <DatePicker fx:id="date" layoutX="206.0" layoutY="134.0" />
+        <ComboBox fx:id="selectCustomer" layoutX="237.0" layoutY="198.0" prefWidth="150.0" promptText="Select Customer" />
+        <ComboBox fx:id="selectLocation" layoutX="659.0" layoutY="125.0" prefWidth="150.0" promptText="Pick Location" />
+        <ComboBox fx:id="selectUser" layoutX="659.0" layoutY="198.0" prefWidth="150.0" promptText="User" />
+        <ComboBox fx:id="meetingTitle" layoutX="659.0" layoutY="265.0" prefHeight="27.0" prefWidth="133.0" promptText="Select Topic" />
+        <TextArea fx:id="meetingDiscription" layoutX="661.0" layoutY="324.0" prefHeight="76.0" prefWidth="248.0" />
+        <Button layoutX="661.0" layoutY="453.0" mnemonicParsing="false" onAction="#goBack" text="Cancle" />
+        <Button layoutX="838.0" layoutY="453.0" mnemonicParsing="false" onAction="#upDate" prefHeight="27.0" prefWidth="61.0" text="Add " />
+      <ComboBox fx:id="selectTimeSlot" layoutX="184.0" layoutY="373.0" prefWidth="150.0" promptText="Select a Time" />
+      <Label layoutX="78.0" layoutY="256.0" prefHeight="46.0" prefWidth="139.0" text="Select Meeting Length" />
+      <ComboBox fx:id="selectMeetingLength" layoutX="250.0" layoutY="265.0" prefWidth="150.0" promptText="Meeting Length" />
+      <Label fx:id="message" layoutX="165.0" layoutY="89.0" prefHeight="17.0" prefWidth="493.0" />
+      <Button fx:id="selectTimeButton" layoutX="185.0" layoutY="373.0" mnemonicParsing="false" onAction="#selectTimeSlot" prefHeight="27.0" prefWidth="177.0" text="Select Appointment time" />
+      <Label fx:id="timeMessage" layoutX="184.0" layoutY="354.0" />
+      <Button layoutX="514.0" layoutY="453.0" mnemonicParsing="false" onAction="#reset" text="Reset Form" />
+    </children>
+</AnchorPane>
